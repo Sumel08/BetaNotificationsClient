@@ -47,7 +47,7 @@ class FirebaseMessage: FirebaseMessagingService() {
 
         // Check if message contains a notification payload.
         if (remoteMessage.notification != null) {
-            Log.d(TAG, "Message Notification Body: " + remoteMessage.notification.body!!)
+            Log.d(TAG, "Message Notification Body: " + remoteMessage.notification!!.body!!)
 
             // Key for the string that's delivered in the action's intent.
             val KEY_TEXT_REPLY = "key_text_reply"
